@@ -3,50 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>meu site :: página inicial</title>
+  <title>fotos da paula</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="page">
+  <div class="layout">
 
-    <header class="banner">
-      <h1>o meu cantinho na web</h1>
-      <p>fotos, textos, links e receitas &mdash; tudo num lugar só</p>
-    </header>
+    <aside class="sidebar">
+      <p class="site-title">fotos da paula</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">início</a></li>
+          <li><a href="albums/junho-2026.html">junho 2026</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <nav class="retro-nav">
-      <a href="index.html">início</a><span class="sep">|</span>
-      <a href="index.html">álbuns</a><span class="sep">|</span>
-      <a href="#">textos</a><span class="sep">|</span>
-      <a href="#">links</a><span class="sep">|</span>
-      <a href="#">receitas</a>
-    </nav>
-
-    <main class="panel">
-      <h2>álbuns de fotos</h2>
-      <p>clica numa capa pra entrar no álbum. dentro de cada álbum é só clicar numa foto pra abrir o carrossel.</p>
+    <main class="content">
+      <h2>álbuns</h2>
 
       <ul class="album-grid">
         <li>
-          <a class="album-card" href="albums/verao-2024.html">
-            <img src="images/verao-2024/capa.jpg" alt="Capa do álbum Verão 2024">
-            <span class="caption">verão 2024</span>
+          <a class="album-card" href="albums/junho-2026.html">
+            <img src="images/junho-2026/01-PHOTO-2026-06-14-12-09-18.jpg" alt="Capa do álbum junho 2026">
+            <span class="caption">junho 2026</span>
           </a>
         </li>
-        <!--
-          pra cada novo álbum, copia o bloco <li> acima, troca o link,
-          a imagem de capa e o texto da legenda.
-        -->
       </ul>
-
-      <p class="blink">✦ em breve: textos, links e receitas ✦</p>
     </main>
-
-    <footer class="retro-footer">
-      <p>feito à mão, sem framework nenhum</p>
-      <span class="badge">melhor visualizado com internet</span>
-    </footer>
 
   </div>
 
