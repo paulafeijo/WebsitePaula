@@ -48,7 +48,6 @@ a:focus-visible {
   width: 220px;
   flex-shrink: 0;
   padding: 32px 20px;
-  border-right: 3px dashed var(--ink);
   position: sticky;
   top: 0;
 }
@@ -108,8 +107,6 @@ a:focus-visible {
   }
   .sidebar {
     width: 100%;
-    border-right: none;
-    border-bottom: 3px dashed var(--ink);
     position: static;
     padding: 20px;
   }
