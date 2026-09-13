@@ -256,3 +256,105 @@ a:focus-visible {
     margin: 8px 6px 0 6px;
   }
 }
+
+/* ---------- Cabeçalho com seletor de idioma ---------- */
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 32px 0 32px;
+  font-size: 20px;
+}
+
+.topbar .lang-current {
+  font-weight: bold;
+}
+
+.topbar .lang-sep {
+  margin: 0 4px;
+  opacity: 0.5;
+}
+
+.topbar a {
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  color: var(--pink);
+}
+
+/* destaca o item ativo do menu lateral */
+.sidebar nav li.active-nav a {
+  font-weight: bold;
+}
+
+/* ---------- Lista de receitas ---------- */
+
+.recipes-list {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.recipes-list li {
+  margin-bottom: 12px;
+}
+
+.recipes-list a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.recipes-list a:hover {
+  color: var(--pink);
+}
+
+/* ---------- Conteúdo de uma receita ---------- */
+
+.recipe-content h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.recipe-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px 0 24px 0;
+}
+
+.recipe-content p {
+  margin: 0 0 14px 0;
+}
+
+.recipe-content ul,
+.recipe-content ol {
+  margin: 0 0 14px 0;
+  padding-left: 28px;
+}
+
+.recipe-content li {
+  margin-bottom: 6px;
+}
+
+.recipe-content a {
+  text-decoration: underline;
+}
+
+.recipe-content details {
+  margin-bottom: 10px;
+  border: 1px solid var(--ink);
+  padding: 8px 12px;
+}
+
+.recipe-content summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.recipe-content details p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
