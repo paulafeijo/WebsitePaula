@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site da paula :: verão</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="lang-current">PT</span> <span class="lang-sep">/</span> <a href="../nl/albums/verao.html">NL</a>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <p class="site-title">site da paula</p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">start</a></li>
+          <li class="active-nav"><a href="../fotos.html">foto's</a></li>
+          <li><a href="../receitas.html">recepten</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <a class="back-link" href="../fotos.html">&lt; voltar para as fotos</a>
+      <h2>verão</h2>
+
+      <ul id="gallery" class="photo-grid">
+        <!-- as miniaturas são geradas automaticamente pelo lightbox.js -->
+      </ul>
+    </main>
+
+  </div>
+
+  <script>
+    const photos = [
+      { src: "../images/verao/03ad8e90-3f11-4ca4-b861-d989afda22c6.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/233e5a11-33ff-4c54-b7eb-54b31421f986.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/478870a0-aef7-402c-a435-282ae2774946.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/4e528046-ef1d-49f6-9a86-78e27a7963cd.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/573c40cc-d46f-4517-bdd6-72d6f53ed0ac.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/700215f3-9ec5-4700-a49b-0c8dcafa44e0.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/7c834723-650d-4739-8da6-1f09e08ba63d.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/8182cc5f-ebc6-4a9a-b9ab-cf421e3e119d.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/83d79c3f-9dd4-4e91-8b83-2946b2c527bd.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/8c769ebf-e2ca-4f26-9dbd-177d493ba82f.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/9a08750b-30e0-4b06-844d-7ee816a8d490.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-18%202.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-18.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%202.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%203.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%204.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%205.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%206.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19%207.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-19.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-20%202.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-20%203.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-20%206.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/PHOTO-2026-06-14-12-09-20.jpg", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/R1-00238-000A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-000A_0001.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-003A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-005A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-007A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-009A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-010A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-011A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-012A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-014A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-019A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-020A.JPG", caption: "Brussel, mei 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-021A.JPG", caption: "Brussel, mei 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-022A.JPG", caption: "Utrecht, juni 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-023A.JPG", caption: "Leiden, mei 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00238-025A.JPG", caption: "Utrecht, mei 2026 — Fujifilm Quicksnap" },
+      { src: "../images/verao/R1-00481-0000.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0000_0001.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0001.JPG", caption: "Schiphol, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0002.JPG", caption: "Schiphol, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0003.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0005.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0006.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0007.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0008.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0009.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0010.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0011.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0013.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0014.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0015.JPG", caption: "Den Haag, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0016.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0017.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0018.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0021.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0024.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0025.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0026.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0028.JPG", caption: "Schiphol, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0029.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0030.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0031.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0033.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0034.JPG", caption: "Amsterdam, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0035.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0036.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/R1-00481-0037_0001.JPG", caption: "Utrecht, juni 2026 — Olympus Superzoom 700XB | Kodak 400" },
+      { src: "../images/verao/c54d94e5-5d87-434d-9fe4-d7536af21206.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/c77d9328-7603-44dc-90ba-e5571b351853.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/d83485ef-1cf5-4129-96dc-6dab762f84d8.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/f178829e-6b92-4e13-bb7a-a9ef65d5ac7d.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" },
+      { src: "../images/verao/fbc1d381-47de-4b28-9b8d-79455cb57e52.JPG", caption: "Utrecht, juni 2026 — Pentax PC35AF-M | Kodak Gold 200" }
+    ];
+  </script>
+  <script src="../js/lightbox.js"></script>
+
+</body>
+</html>
