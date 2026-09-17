@@ -158,6 +158,7 @@ a:focus-visible {
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
   gap: 24px;
   margin: 16px 0;
   list-style: none;

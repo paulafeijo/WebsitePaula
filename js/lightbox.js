@@ -33,8 +33,8 @@
     img.loading = 'lazy';
     button.appendChild(img);
 
-    // thumbnails should not show captions on the page – captions
-    // are displayed inside the lightbox/carousel only.
+    // A legenda não é mais exibida abaixo da miniatura: ela só aparece
+    // dentro do carrossel (lightbox), no elemento .lightbox-caption.
 
     button.addEventListener('click', () => openLightbox(index));
     li.appendChild(button);
