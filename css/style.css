@@ -156,13 +156,16 @@ a:focus-visible {
 /* ---------- Grade de fotos ---------- */
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  align-items: start;
-  gap: 24px;
+  columns: 3 280px;
+  column-gap: 24px;
   margin: 16px 0;
   list-style: none;
   padding: 0;
+}
+
+.photo-grid li {
+  break-inside: avoid;
+  margin-bottom: 24px;
 }
 
 .photo-thumb {
@@ -185,6 +188,18 @@ a:focus-visible {
   width: 100%;
   height: auto;
   display: block;
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .photo-grid {
+    columns: 1;
+  }
 }
 
 /* ---------- Lightbox / carrossel ---------- */
@@ -222,6 +237,7 @@ a:focus-visible {
   color: #fff;
   font-size: 18px;
   margin-top: 10px;
+  white-space: pre-line;
 }
 
 .lightbox-close,
