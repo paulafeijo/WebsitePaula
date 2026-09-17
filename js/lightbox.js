@@ -33,12 +33,8 @@
     img.loading = 'lazy';
     button.appendChild(img);
 
-    if (photo.caption) {
-      const cap = document.createElement('span');
-      cap.className = 'caption';
-      cap.textContent = photo.caption;
-      button.appendChild(cap);
-    }
+    // thumbnails should not show captions on the page – captions
+    // are displayed inside the lightbox/carousel only.
 
     button.addEventListener('click', () => openLightbox(index));
     li.appendChild(button);
