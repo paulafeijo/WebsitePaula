@@ -19,6 +19,7 @@
       <nav>
         <ul>
           <li><a href="../index.html">início</a></li>
+          <li class="active-nav"><a href="../artes.html">artes</a></li>
           <li class="active-nav"><a href="../fotos.html">fotos</a></li>
           <li><a href="../receitas.html">receitas</a></li>
         </ul>
@@ -38,35 +39,35 @@
 
   <script>
     const photos = [
-      { src: "../images/new-camera-weird-pictures/003.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/004.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/005.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/006.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/007.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/008.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/009.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/010.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/011.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/013.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/015.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/017.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/018.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/019.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/020.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/021.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/022.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/023.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/024.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/025.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/026.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/027.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/028.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/031.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/033.jpg", caption: "Portugal, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/034.jpg", caption: "Portugal, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/035.jpg", caption: "Figueira da Foz, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/037.jpg", caption: "Figueira da Foz, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
       { src: "../images/new-camera-weird-pictures/036.jpg", caption: "Figueira da Foz, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
-      { src: "../images/new-camera-weird-pictures/037.jpg", caption: "Figueira da Foz, setembro de 2026.\nYashica 200-AF | Cinestill 800T" }
+      { src: "../images/new-camera-weird-pictures/035.jpg", caption: "Figueira da Foz, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/034.jpg", caption: "Portugal, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/033.jpg", caption: "Portugal, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/031.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/028.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/027.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/026.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/025.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/024.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/023.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/022.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/021.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/020.jpg", caption: "Porto, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/019.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/018.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/017.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/015.jpg", caption: "Amsterdã, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/013.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/011.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/010.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/009.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/008.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/007.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/006.jpg", caption: "Utrecht, setembro de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/005.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/004.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" },
+      { src: "../images/new-camera-weird-pictures/003.jpg", caption: "Estocolmo, agosto de 2026.\nYashica 200-AF | Cinestill 800T" }
     ];
   </script>
   <script src="../js/lightbox.js"></script>
