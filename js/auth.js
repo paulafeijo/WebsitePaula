@@ -3,7 +3,7 @@
 (function () {
   // ====== COLE AQUI OS HASHES (um por pessoa, separados por vírgula) ======
   var HASHES = [
-    'COLE_O_PRIMEIRO_HASH_AQUI'
+    '23015f9cebac49f81d0be4f3dde83d74265a8d79ad458ab7731fcde99ffc5662'
     // , 'COLE_O_SEGUNDO_HASH_AQUI'
   ];
   var SALT = 'site-da-paula';
