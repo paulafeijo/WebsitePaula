@@ -1,9 +1,16 @@
+/*Instruções: abra o site e abra o modo desenvolvedor (cmd + option + J).
+  Digite o código abaico, substitutindo usuario:senha pelo q vc quiser.
+  (async()=>{const t='site-da-paula:usuario:senha';const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));console.log([...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join(''))})()
+
+  adiciona a hash abaixo.
+
 /* Login simples (usuário + senha) para o site.
    Aviso: roda no navegador, então afasta curiosos mas não é segurança de verdade. */
 (function () {
   // ====== COLE AQUI OS HASHES (um por pessoa, separados por vírgula) ======
   var HASHES = [
-    '23015f9cebac49f81d0be4f3dde83d74265a8d79ad458ab7731fcde99ffc5662'
+    '23015f9cebac49f81d0be4f3dde83d74265a8d79ad458ab7731fcde99ffc5662',
+    '09c570785158740a0b7535228edd2204e0e836c478cd3b856619b850ef38911c'
     // , 'COLE_O_SEGUNDO_HASH_AQUI'
   ];
   var SALT = 'site-da-paula';
