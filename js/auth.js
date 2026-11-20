@@ -1,8 +1,11 @@
 /* Login simples (usuário + senha) para o site.
    Aviso: roda no navegador, então afasta curiosos mas não é segurança de verdade. */
 (function () {
-  // ====== COLE AQUI O SEU HASH (veja as instruções) ======
-  var HASH = 'COLE_O_SEU_HASH_AQUI';
+  // ====== COLE AQUI OS HASHES (um por pessoa, separados por vírgula) ======
+  var HASHES = [
+    'COLE_O_PRIMEIRO_HASH_AQUI'
+    // , 'COLE_O_SEGUNDO_HASH_AQUI'
+  ];
   var SALT = 'site-da-paula';
   // ========================================================
   var KEY = 'sdp-auth';
@@ -22,7 +25,7 @@
 
   var saved = null;
   try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved && saved === HASH) return; // já está logada: página abre normal
+  if (saved && HASHES.indexOf(saved) !== -1) return; // já está logada: página abre normal
 
   // esconde a página até o login
   var hide = document.createElement('style');
@@ -60,7 +63,7 @@
       var u = document.getElementById('auth-user').value.trim().toLowerCase();
       var p = document.getElementById('auth-pass').value;
       sha256(SALT + ':' + u + ':' + p).then(function (h) {
-        if (h === HASH) {
+        if (HASHES.indexOf(h) !== -1) {
           try { localStorage.setItem(KEY, h); } catch (e) {}
           box.remove();
           hide.remove();
