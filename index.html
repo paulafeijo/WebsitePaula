@@ -6,6 +6,7 @@
   <title>site da paula</title>
   <script src="js/auth.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
@@ -19,19 +20,45 @@
       <p class="site-title">site da paula</p>
       <nav>
         <ul>
-          <li><a href="../index.html">início</a></li>
-          <li class="active-nav"><a href="../artes.html">artes</a></li>
-          <li class="active-nav"><a href="../fotos.html">fotos</a></li>
+          <li class="active-nav"><a href="../index.html">início</a></li>
+          <li><a href="../artes.html">artes</a></li>
+          <li><a href="../fotos.html">fotos</a></li>
           <li><a href="../receitas.html">receitas</a></li>
         </ul>
       </nav>
     </aside>
 
     <main class="content">
-      <!-- página inicial em branco por enquanto -->
+      <h1 class="home-title" data-text="site da paula">site da paula</h1>
+      <p class="home-tagline">fotos, artes e receitas</p>
+
+      <ul class="home-grid">
+        <li>
+          <a class="home-card" href="artes.html">
+            <img src="images/textil/IMG_9417.jpeg" alt="fios de tecelagem">
+            <span class="card-title">artes</span>
+            <span class="card-text">trabalhos têxteis e outras experiências</span>
+          </a>
+        </li>
+        <li>
+          <a class="home-card" href="fotos.html">
+            <img src="images/verao/R1-00481-0018.JPG" alt="foto do verão">
+            <span class="card-title">fotos</span>
+            <span class="card-text">álbuns de viagens e do dia a dia</span>
+          </a>
+        </li>
+        <li>
+          <a class="home-card" href="receitas.html">
+            <img src="images/receitas/brigadeiro-tradicional.jpg" alt="brigadeiro tradicional">
+            <span class="card-title">receitas</span>
+            <span class="card-text">comida brasileira para fazer em casa</span>
+          </a>
+        </li>
+      </ul>
     </main>
 
   </div>
 
+  <script src="js/typing.js"></script>
 </body>
 </html>
